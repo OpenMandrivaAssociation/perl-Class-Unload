@@ -1,15 +1,15 @@
 %define upstream_name    Class-Unload
-%define upstream_version 0.07
+%define upstream_version 0.08
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Unload a class
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Class/Class-Unload-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Inspector)
@@ -68,4 +68,5 @@ make test
 
 * Tue Dec 02 2008 cpan2dist 0.03-1mdv
 - initial mdv release, generated with cpan2dist
+
 
